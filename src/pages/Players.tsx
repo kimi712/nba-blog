@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 
 interface Player {
@@ -19,7 +19,7 @@ interface Player {
 
 const Players = () => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [loading, setLoading] = useState(false);
+
   
   const players: Player[] = [
     {
